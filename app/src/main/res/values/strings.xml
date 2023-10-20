@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Burger Sabath Delivery</string>
+    <string name="login">Login</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="text_cadastro">Crie uma conta clicando aqui</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home2">Home2</string>
+    <string name="description1">Pão com gergelim, alface, tomate, queijo e 150 gr de hambúrger.</string>
+    <string name="quantidade">Quantidade</string>
+
+    <string-array name="spinner">
+        <item>Dinheiro</item>
+        <item>Cartão de Crédito</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preparingText">Pedido sendo preparado</string>
+</resources>

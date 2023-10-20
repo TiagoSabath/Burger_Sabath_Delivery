@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    tools:context=".Activity.TelaAvaliacao">
+
+
+
+    <TextView
+        android:id="@+id/textAprovado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagamento Aprovado"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPayArpovado"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/textAprovado"
+        android:layout_alignEnd="@+id/textAprovado"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="62dp"
+        android:src="@drawable/ic_check_24" />
+
+    <ProgressBar
+        android:id="@+id/progressPayAprovado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textPedidoPreparado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido sendo preparado"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgPreparando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPedidoPreparado"
+        android:layout_alignStart="@+id/textPedidoPreparado"
+        android:layout_alignEnd="@+id/textPedidoPreparado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="75dp"
+        android:src="@drawable/grill_icon"
+        android:visibility="gone">
+
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/progressPedidoPreparado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textSaindoParaEntregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saindo para entregar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/progressPedidoPreparado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delivery_icon"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressSaindoParaEntregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSaindoParaEntregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textPedidoEntregue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido entregue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/progressSaindoParaEntregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textAvaliePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Avalie o seu pedido"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPedidoEntregue"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@color/red"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAvaliePedido"
+        android:background="@drawable/btn_perfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Concluir"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:visibility="gone"/>
+</RelativeLayout>
